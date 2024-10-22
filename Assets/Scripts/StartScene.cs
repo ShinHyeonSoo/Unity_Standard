@@ -10,5 +10,7 @@ public class StartScene : MonoBehaviour
         QuestManager mgr = QuestManager.Instance;
 
         GameObject obj = pool.Get("test");
+
+        mgr.PrintQuests();
     }
 }
