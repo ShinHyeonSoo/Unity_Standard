@@ -26,8 +26,8 @@ public class QuestManager : MonoBehaviour
 
         if(instance == null)
         {
-            GameObject obj = new GameObject();
-            obj.name = typeof(QuestManager).Name;
+            GameObject obj = new GameObject(nameof(QuestManager));
+            //obj.name = typeof(QuestManager).Name;
             obj.AddComponent<QuestManager>();
             DontDestroyOnLoad(obj);
         }

@@ -14,10 +14,9 @@ public class ObjectPool : MonoBehaviour
     }
 
     public List<Pool> Pools;
-    private List<GameObject> _pool = new List<GameObject>();
     private Dictionary<string, List<GameObject>> _poolDic = new Dictionary<string, List<GameObject>>();
 
-    void Start()
+    void Awake()
     {
         // 미리 poolSize만큼 게임오브젝트를 생성한다.
         foreach (var pool in Pools)
